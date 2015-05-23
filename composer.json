@@ -1,0 +1,25 @@
+{
+    "name": "tanlabs/micropay",
+    "description": "A php module to integrate with micropay",
+    "type": "library",
+    "keywords": ["payment", "micropay"],
+    "require": {
+        "php": ">=5.4.0",
+        "nategood/httpful": "0.2.19"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zhao Yun",
+            "email": "zyun@duxous.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "tanlabs\\micropay\\": "src/"
+        }
+    }
+}
