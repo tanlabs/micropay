@@ -54,7 +54,7 @@ class Micropay
                 throw new MicropayException($resbody->return_msg);
             } else if ((isset($resbody->return_code) && $resbody->return_code == 'SUCCESS') &&
                 isset($resbody->result_code) && $resbody->result_code == 'FAIL') {
-                throw new MicropayException($resbody->err_code . ':' . $resbody->err_code_des);
+                throw new MicropayException($resbody->err_code, $resbody->err_code_des);
             } else {
                 // nothing to do
             }
